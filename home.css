@@ -133,24 +133,28 @@ header .navigation li a:hover {
 
 section{
     padding: 90px;
-    color: #111;
+    color: #fff;
+    background: #fff;
     
 }
 .row {
-    color: #111;
+    background: #111;
+    color: #fff;
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .row .col50 {
+    margin-left: 15px;
+    color: #fff;
     position: relative;
     width: 100%;
     height: 100vh;
 }
 .titleText {
-    color: #111;
-    font-size: 3em;
+    color: #fff;
+    font-size: 2.5em;
     font-weight: 300;
 }
 
@@ -179,30 +183,47 @@ section{
 
 /* News */
 
-.about {
+
+section{
+    padding: 90px;
+    
+}
+.about .row {
     position: relative;
-    height: 100vh;
     width: 100%;
-    background: #111;
-    box-shadow: 0 25px 30px rgba(0, o, 0, 0.5);
     display: flex;
+    justify-content: space-between;
+}
+.about .row .col50 {
+    position: relative;
+    width: 48%;
+}
+.about .titleText {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300;
 }
 
-.about .content {
-    width: calc(50% - 50px);
+
+.about .row .col50 .imgBx{
+    position: relative;
+    width: 100%;
     height: 100%;
-    background: #000;
-    box-sizing: border-box;
-    padding: 30px 50px;
 }
-.about .imgeBox{
-    width: calc(50% + 50px);
+.about .row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    
-    box-sizing: border-box;
-    background: url(image/4.jpg);
-    background-repeat: no-repeat;
     object-fit: cover;
+}
+.about .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
 }
 /* Price */
 
@@ -220,7 +241,7 @@ section{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .price  .content .box {
@@ -445,6 +466,7 @@ footer {
     }
  
     .menuToggle.active {
+        
         background: url(image/close1.png);
         background-size: 25px;
         background-repeat: no-repeat;
@@ -456,10 +478,21 @@ footer {
     }
     
    section {
-        padding: 1px;
+        padding: 5px;
+    }
+    .banner {
+        
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    background: url(image/4.jpg);
+    background-size: cover;
+    clip-path: circle(250vh at 50% -150vh);
     }
     .banner .content h2 {
-        font-size: 3em;
+        font-size: 2em;
         color: #fff;
     }
     
@@ -467,31 +500,17 @@ footer {
         flex-direction: column;
     }
     .row .col50 {
+        margin-left: 1px;
         position: relative;
         width: 100%;
+        height: 100%;
     }
     .row .col50 .imgBx {
-    
-        height: 300px;
-        margin-top: 200px;
+        width: 100%;
+        height: 400px;
+        margin-top: 10px;
+        margin-left: 0;
     }
-
-
-    .about {
-        display: flex;
-        flex-direction: column;
-       
-    }
-    .about .content  {
-        width: 90%;
-        margin: 20px;
-    }
-    .about .imgBox {
-        visibility: hidden;
-        min-height: 0;
-    }
-
-
     
    .title {
         text-align: center;
@@ -501,6 +520,20 @@ footer {
         line-height: 1.5em;
         margin-bottom: 15px;
         font-weight: 300;
+    }
+
+    
+   .about .row{
+        flex-direction: column;
+    }
+    .about .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .about .row .col50 .imgBx {
+        
+        height: 600px;
+        margin-top: 10px;
     }
 
 
@@ -518,4 +551,12 @@ footer {
     }
 
 
+}
+
+
+@media (max-width: 480px) {
+    .banner .content h2 {
+        font-size: 2.2em;
+        
+    }
 }
