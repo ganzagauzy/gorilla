@@ -481,19 +481,20 @@ footer {
         
     position: relative;
     width: 100%;
-    display: flex;
-    padding-left: 50px;
-    align-items: center;
-    background: url(image/4.jpg);
-    background-size: cover;
-    clip-path: circle(250vh at 50% -150vh);
+    
     }
-    .banner .content h2 {
+    .banner .content .text h2 {
+        font-size: 3em;
+    }
+    .banner .content .text h3 {
         font-size: 2em;
-        color: #fff;
+    }
+    .banner .content .text p {
+        font-size: 1em;
     }
     
    .row{
+       width: 100%;
         flex-direction: column;
     }
     .row .col50 {
