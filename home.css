@@ -198,13 +198,11 @@ section{
 .about .imgeBox{
     width: calc(50% + 50px);
     height: 100%;
-    background: #f00;
+    
     box-sizing: border-box;
-    border-left: 100px solid #000;
-    border-bottom: 475px solid transparent;
     background: url(image/4.jpg);
     background-repeat: no-repeat;
-    object-fit: fill;
+    object-fit: cover;
 }
 /* Price */
 
@@ -403,3 +401,121 @@ footer {
 
 
 
+
+@media (max-width: 700px){
+    header, header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+     display: none;  
+    }
+ 
+    header .navigation.active {
+         width: 100%;
+         height: calc(100% - 68px);
+         top: 10%; 
+         left: 0;
+         position: fixed;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         background: #fff;
+     }
+     header .navigation li{
+         margin-left: 0;
+     }
+     header .navigation li a {
+         text-decoration: none;
+         color: #111;
+         font-size: 1.6em;
+         font-weight: 300; 
+     }
+ 
+ 
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(image/menu1.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer; 
+    }
+ 
+    .menuToggle.active {
+        background: url(image/close1.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #fff;
+    }
+    header.sticky .menuToggle {
+        filter: invert(2);
+    }
+    
+   section {
+        padding: 1px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    
+   .row{
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+    
+        height: 300px;
+        margin-top: 200px;
+    }
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .about .content  {
+        width: 90%;
+        margin: 20px;
+    }
+    .about .imgBox {
+        visibility: hidden;
+        min-height: 0;
+    }
+
+
+    
+   .title {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+
+    
+   .price  .content .box {
+    
+    margin: 20px;
+    padding: 30px;
+   
+    }
+    .contact .contactForm {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+}
