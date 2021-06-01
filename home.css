@@ -438,6 +438,21 @@ footer {
         filter: invert(2);
     }
 
+        
+    .banner{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        padding-left: 30px;
+        align-items: center;
+        background: url(image/1.jpg);
+        background-size: cover;
+        object-fit: cover;
+        clip-path: circle(350vh at 50% -250vh);
+        
+    }
+
     
     
     
