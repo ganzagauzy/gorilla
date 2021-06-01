@@ -133,28 +133,21 @@ header .navigation li a:hover {
 
 section{
     padding: 90px;
-    color: #fff;
-    background: #fff;
     
 }
 .row {
-    background: #111;
-    color: #fff;
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .row .col50 {
-    margin-left: 15px;
-    color: #fff;
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: 48%;
 }
 .titleText {
-    color: #fff;
-    font-size: 2.5em;
+    color: #111;
+    font-size: 2em;
     font-weight: 300;
 }
 
@@ -173,52 +166,6 @@ section{
     object-fit: cover;
 }
 .title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-}
-
-
-/* News */
-
-
-section{
-    padding: 90px;
-    
-}
-.about .row {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.about .row .col50 {
-    position: relative;
-    width: 48%;
-}
-.about .titleText {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 300;
-}
-
-
-.about .row .col50 .imgBx{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.about .row .col50 .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.about .title {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -312,11 +259,6 @@ section{
     margin-top: 50px;
 }
 
-.contactForm#blur.active{
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-}
 
 .contactForm h3 {
     color: #111;
@@ -423,7 +365,8 @@ footer {
 
 
 
-@media (max-width: 798px){
+@media (max-width: 700px){
+
     header, header.sticky {
         padding: 10px 20px;
     }
@@ -442,16 +385,18 @@ footer {
          align-items: center;
          flex-direction: column;
          background: #fff;
-     }
-     header .navigation li{
+    }
+    header .navigation li{
          margin-left: 0;
-     }
-     header .navigation li a {
-         text-decoration: none;
-         color: #111;
-         font-size: 1.6em;
+    }
+    header .navigation li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300; 
          font-weight: 300; 
-     }
+        font-weight: 300; 
+    }
  
  
     .menuToggle {
@@ -476,11 +421,14 @@ footer {
     header.sticky .menuToggle {
         filter: invert(2);
     }
+    .section {
+        padding: 5px;
+    }
     
     .banner {
         
-    position: relative;
-    width: 100%;
+        position: relative;
+        width: 100%;
     
     }
     .banner .content .text h2 {
@@ -492,54 +440,29 @@ footer {
     .banner .content .text p {
         font-size: 1em;
     }
+
     
    .row{
-       width: 100%;
         flex-direction: column;
+        padding-left: 0;
+        width: 100%;
+       
     }
     .row .col50 {
-        margin-left: 1px;
         position: relative;
         width: 100%;
-        height: 100%;
     }
     .row .col50 .imgBx {
-        width: 100%;
-        height: 400px;
-        margin-top: 10px;
-        margin-left: 0;
-    }
-    
-   .title {
-        text-align: center;
-    }
-    .titleText {
-        font-size: 1.8em;
-        line-height: 1.5em;
-        margin-bottom: 15px;
-        font-weight: 300;
-    }
-
-    
-   .about .row{
-        flex-direction: column;
-    }
-    .about .row .col50 {
-        position: relative;
-        width: 100%;
-    }
-    .about .row .col50 .imgBx {
         
-        height: 600px;
-        margin-top: 10px;
+        height: 300px;
+        margin-top: 20px;
     }
 
-
     
-   .price  .content .box {
+    .price  .content .box {
     
-    margin: 20px;
-    padding: 30px;
+        margin: 20px;
+        padding: 30px;
    
     }
     .contact .contactForm {
@@ -553,6 +476,7 @@ footer {
 
 
 @media (max-width: 480px) {
+
     .banner .content h2 {
         font-size: 2.2em;
         
