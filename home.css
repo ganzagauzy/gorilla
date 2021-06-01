@@ -421,21 +421,13 @@ footer {
     header.sticky .menuToggle {
         filter: invert(2);
     }
+
     .section {
         padding: 5px;
     }
     
-    .banner {
-        
-        position: relative;
-        width: 100%;
-        
-        background: url(image/4.jpg);
-        width: 100%;
-        background-size: cover;
-        clip-path: circle(250vh at 50% -150vh);
     
-    }
+    
     .banner .content .text h2 {
         font-size: 3em;
     }
@@ -445,9 +437,11 @@ footer {
     .banner .content  p {
         font-size: 1em;
     }
+    
 
     
    .row{
+       left: 0;
         flex-direction: column;
     }
     .row .col50 {
