@@ -28,7 +28,7 @@ p{
     align-items: center;
     background: url(image/4.jpg);
     background-size: cover;
-    clip-path: circle(250vh at 50% -150vh);
+    clip-path: circle(350vh at 50% -250vh);
     
 }
 
