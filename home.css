@@ -429,6 +429,11 @@ footer {
         
         position: relative;
         width: 100%;
+        
+        background: url(image/4.jpg);
+        width: 100%;
+        background-size: cover;
+        clip-path: circle(250vh at 50% -150vh);
     
     }
     .banner .content .text h2 {
@@ -437,16 +442,13 @@ footer {
     .banner .content .text h3 {
         font-size: 2em;
     }
-    .banner .content .text p {
+    .banner .content  p {
         font-size: 1em;
     }
 
     
    .row{
         flex-direction: column;
-        padding-left: 0;
-        width: 100%;
-       
     }
     .row .col50 {
         position: relative;
