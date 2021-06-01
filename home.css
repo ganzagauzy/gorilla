@@ -139,7 +139,7 @@ section{
     
 }
 .row {
-    background: #111;
+    background: #15202B;
     position: relative;
     width: 100%;
     display: flex;
@@ -472,7 +472,6 @@ footer {
 
     
    .row{
-       background: #111;
        left: 0;
         flex-direction: column;
     }

@@ -84,18 +84,17 @@
     background: none;
     mix-blend-mode: overlay;
 }
-.showcase .text {
-    bottom: 10px;
-    padding-left: 0;
-}
+
 
 
 .text {
+    padding-top: 300px;
     bottom: 10px;
-    padding-left: 0;
+    padding-left: 10px;
     left: 0;
     position: relative;
     z-index: 10;
+    color: #fff;
 }
 .text h2 {
     font-size: 3em;
@@ -134,7 +133,7 @@
 
 .social {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -152,7 +151,7 @@
     transition: 0.5s;
 }
 .social li a:hover {
-    transform: scale(0.7) translateY(-25px);
+    transform: scale(0.7) translateY(-20px);
 }
 .menu {
     background: #111;
