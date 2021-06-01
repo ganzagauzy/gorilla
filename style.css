@@ -84,26 +84,33 @@
     background: none;
     mix-blend-mode: overlay;
 }
+.showcase .text {
+    bottom: 10px;
+    padding-left: 0;
+}
 
 
 .text {
+    bottom: 10px;
+    padding-left: 0;
+    left: 0;
     position: relative;
     z-index: 10;
 }
 .text h2 {
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 800;
     line-height: 0.8em;
     text-transform: uppercase;
 }
 .text h3 {
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: 700;
     line-height: 0.8em;
     text-transform: uppercase;
 }
 .text p {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 20px 0;
     font-weight: 400;
     max-width: 700px;
@@ -182,9 +189,9 @@
         padding: 40px;
     }
     .text h2{
-        font-size: 3em;
+        font-size: 2em;
     }
     .text h3 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }

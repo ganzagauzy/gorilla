@@ -139,6 +139,7 @@ section{
     
 }
 .row {
+    background: #111;
     position: relative;
     width: 100%;
     display: flex;
@@ -149,7 +150,7 @@ section{
     width: 48%;
 }
 .titleText {
-    color: #111;
+    color: #fff;
     font-size: 2em;
     font-weight: 300;
 }
@@ -379,6 +380,7 @@ footer {
 
 
     .section {
+        background: #111;
         padding: 5px;
         padding-left: 5px;
     }
@@ -449,7 +451,7 @@ footer {
         background: url(image/1.jpg);
         background-size: cover;
         object-fit: cover;
-        clip-path: circle(350vh at 50% -250vh);
+        clip-path: circle(70vh at 50% 30vh);
         
     }
 
@@ -470,6 +472,7 @@ footer {
 
     
    .row{
+       background: #111;
        left: 0;
         flex-direction: column;
     }
