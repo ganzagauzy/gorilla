@@ -200,4 +200,8 @@ header {
         color: #fff;
         text-align: center;
     }
+    .box .inputBox  input {
+        font-size: 12px;
+        padding: 5px 0;
+    }
 }
